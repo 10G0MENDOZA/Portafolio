@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio - Diego Mendoza</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobremi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero" id="inicio">
+        <div class="imagen_personal">
+            <img src="img/Img_personal.jpg" alt="Foto de Diego Mendoza" />
+        </div>
+        <div class="contenido_texto">
+            <h1 id="h1_titulo">Diego Mendoza</h1>
+            <h2 class="titulo_front">Front End Developer</h2>
+            <p class="descripcion">
+                Apasionado en todo lo que hago, dispuesto a enfrentar desafíos y amante de todo lo que implique
+                transformación y desarrollo. Soy versátil, leal y sé adaptarme a los entornos de trabajo.
+            </p>
+            <div class="links">
+                <a href="https://github.com/10G0MENDOZA" target="_blank">
+                    <img src="img/icon_git (1).png" alt="GitHub" />
+                </a>
+                <a href="https://www.linkedin.com/in/diego-ali-mendoza-bastidas-1650202a4/" target="_blank">
+                    <img src="img/icon_linkedin.png" alt="LinkedIn" />
+                </a>
+            </div>
+            <div class="cv">
+                <a href="docs/CV_DiegoMendoza.pdf" download>
+                    <button>Descargar CV</button>
+                </a>
+            </div>
+        </div>
+    </main>
+    <section id="proyectos" class="proyectos">
+        <h2>Proyectos</h2>
+        <p class="subtitulo">Todo lo que puedas imaginar, lo podrás <span class="resaltado">programar</span>.</p>
+
+        <!-- Filtros -->
+        <div class="filtros">
+            <button onclick="filtrarProyectos('todos')">Html</button>
+            <button onclick="filtrarProyectos('js')">CSS</button>
+            <button onclick="filtrarProyectos('framework')">Java Script</button>
+            <button onclick="filtrarProyectos('wordpress')">PHP</button>
+            <button onclick="filtrarProyectos('wordpress')">Laravel</button>
+        </div>
+        <div class="card-proyecto" onclick="abrirModal(1)">
+            <img src="img/login.png" alt="LoginApp" />
+            <h4>LoginApp</h4>
+            <div class="tecnologias-usadas">
+                <img src="img/icons_html.png" alt="HTML" />
+                <img src="img/icons_css.png" alt="CSS" />
+                <img src="img/icons_javascript.png" alt="JS" />
+            </div>
+            <a href="#" class="btn-ver-en-vivo" target="_blank">Ver en vivo</a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modalImagen" class="modal-visual">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h2 id="tituloModal"></h2>
+            <img id="imagenModal" src="" alt="Vista ampliada" />
+            <div class="tecnologias-usadas" id="tecnologiasModal"></div>
+            <a id="linkModal" href="#" target="_blank" class="btn-ver-en-vivo">Ver en vivo</a>
+            <div class="controles">
+                <button onclick="cambiarProyecto(-1)">&#8592;</button>
+                <button onclick="cambiarProyecto(1)">&#8594;</button>
+            </div>
+        </div>
+    </div>
+
+    <h4>Expenselite</h4>
+
+    <!-- Tecnologías utilizadas -->
+    <div class="tecnologias-usadas">
+        <img src="img/icons_html.png" alt="HTML" />
+        <img src="img/icons_css.png" alt="CSS" />
+        <img src="img/icons_javascript.png" alt="JS" />
+    </div>
+
+    <a href="https://expenselite.avanceapps.com/" class="btn-ver-en-vivo" target="_blank">Ver en vivo</a>
+    </div>
+
+    <!-- Botón Ver en vivo -->
+    <a href="https://expenselite.avanceapps.com/" class="btn-ver-en-vivo" target="_blank">Ver en vivo</a>
+    </div>
+
+
+    <div class="card-proyecto framework" onclick="abrirModal('modely')">
+        <img src="img/modely.png" alt="Model Y" />
+        <h4>Model Y</h4>
+    </div>
+    <!-- Agrega más proyectos aquí -->
+    </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal-proyecto" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <div id="contenido-modal">
+                <!-- Aquí se carga el contenido dinámico -->
+            </div>
+        </div>
+    </div>
+    <script src="js/carusel.js"></script>
+</body>
+
+</html>
