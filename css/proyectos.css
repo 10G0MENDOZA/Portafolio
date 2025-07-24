@@ -1,0 +1,91 @@
+.proyectos {
+    position: relative;
+    padding: 30px 20px;
+    text-align: center;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.proyectos h2 {
+    font-size: 28px;
+    color: #00ff00;
+    margin: 0;
+}
+
+.subtitulo {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+}
+
+.resaltado {
+    color: #0f0;
+    font-weight: bold;
+}
+
+.card-proyecto {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.card-proyecto h4 {
+    font-size: 22px;
+    color: #00ff00;
+    margin: 10px 0;
+}
+
+#imgexpenselite {
+    width: 100%;
+    max-width: 500px;
+    max-height: 250px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff00;
+    margin: 10px 0;
+}
+
+.tecnologias-usadas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.tecnologias-usadas img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+.tecnologias-usadas img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.btn-ver-en-vivo {
+    padding: 6px 14px;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-ver-en-vivo:hover {
+    background-color: rgb(156, 6, 243);
+    color: white;
+}

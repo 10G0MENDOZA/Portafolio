@@ -5,10 +5,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portafolio - Diego Mendoza</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="/css/proyectos.css">
+    <link rel="stylesheet" href="/css/skills.css">
+    <link rel="stylesheet" href="/css/sobre_mi.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="/css/">
+
 </head>
 
 <body>
+ <video autoplay muted loop id="video-fondo">
+  <source src="video/video_fondo3.mp4" type="video/mp4">
+</video>
+    <!-- NAVBAR -->
     <header class="navbar">
         <nav>
             <ul>
@@ -16,26 +29,31 @@
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#sobremi">Sobre mí</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#skill">Skill</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- HERO -->
     <main class="hero" id="inicio">
         <div class="imagen_personal">
-            <img src="img/Img_personal.jpg" alt="Foto de Diego Mendoza" />
+            <img src="img/PRUEBA.jpeg" alt="Foto de Diego Mendoza" />
         </div>
         <div class="contenido_texto">
             <h1 id="h1_titulo">Diego Mendoza</h1>
             <h2 class="titulo_front">Front End Developer</h2>
             <p class="descripcion">
-                Apasionado en todo lo que hago, dispuesto a enfrentar desafíos y amante de todo lo que implique
-                transformación y desarrollo. Soy versátil, leal y sé adaptarme a los entornos de trabajo.
+                <!---  Apasionado por el desarrollo web, especializado en interfaces modernas y escalables usando tecnologías
+                como HTML, CSS, JavaScript, PHP, Laravel y React. Comprometido con crear experiencias digitales que
+                impacten.-->
             </p>
+            <p id="typewriter-index"></p>
             <div class="links">
                 <a href="https://github.com/10G0MENDOZA" target="_blank">
-                    <img src="img/icon_git (1).png" alt="GitHub" />
+                    <img src="img/icon_git.png" alt="GitHub" />
                 </a>
-                <a href="https://www.linkedin.com/in/diego-ali-mendoza-bastidas-1650202a4/" target="_blank">
+                <a id="linktwo" href="https://www.linkedin.com/in/diego-ali-mendoza-bastidas-1650202a4/"
+                    target="_blank">
                     <img src="img/icon_linkedin.png" alt="LinkedIn" />
                 </a>
             </div>
@@ -46,72 +64,77 @@
             </div>
         </div>
     </main>
+
+    <!-- PROYECTOS -->
     <section id="proyectos" class="proyectos">
         <h2>Proyectos</h2>
         <p class="subtitulo">Todo lo que puedas imaginar, lo podrás <span class="resaltado">programar</span>.</p>
 
-        <!-- Filtros -->
-        <div class="filtros">
-            <button onclick="filtrarProyectos('todos')">Html</button>
+        <!---<div class="filtros">
+            <button onclick="filtrarProyectos('todos')">HTML</button>
             <button onclick="filtrarProyectos('js')">CSS</button>
-            <button onclick="filtrarProyectos('framework')">Java Script</button>
+            <button onclick="filtrarProyectos('framework')">JavaScript</button>
             <button onclick="filtrarProyectos('wordpress')">PHP</button>
             <button onclick="filtrarProyectos('wordpress')">Laravel</button>
-        </div>
-        <div class="card-proyecto" onclick="abrirModal(1)">
-            <img src="img/login.png" alt="LoginApp" />
-            <h4>LoginApp</h4>
-            <div class="tecnologias-usadas">
-                <img src="img/icons_html.png" alt="HTML" />
-                <img src="img/icons_css.png" alt="CSS" />
-                <img src="img/icons_javascript.png" alt="JS" />
+        </div> -->
+
+        <div class="galeria-proyectos">
+            <div class="card-proyecto js" onclick="abrirModal('Expenselite')">
+                <h4 id="expenseliteh1">Expenselite</h4>
+                <p>Usuario:Mily
+                    Contraseña: Recepcion25
+                </p>
+                <a href="https://expenselite.avanceapps.com/" target="_blank">
+                    <img id="imgexpenselite" src="img/index.png" alt="Expenselite" />
+                    <div class="tecnologias-usadas">
+                        <img src="img/icons_html.png" alt="HTML" />
+                        <img src="img/icons_css.png" alt="CSS" />
+                        <img src="img/icons_javascript.png" alt="JS" />
+                        <img src="img/icons_php.png" alt="JS" />
+                    </div>
+                    <a href="https://expenselite.avanceapps.com/" class="btn-ver-en-vivo" target="_blank">Ver en
+                        Github</a>
             </div>
-            <a href="#" class="btn-ver-en-vivo" target="_blank">Ver en vivo</a>
-        </div>
         </div>
     </section>
 
-    <!-- Modal -->
-    <div id="modalImagen" class="modal-visual">
-        <div class="modal-contenido">
-            <span class="cerrar" onclick="cerrarModal()">&times;</span>
-            <h2 id="tituloModal"></h2>
-            <img id="imagenModal" src="" alt="Vista ampliada" />
-            <div class="tecnologias-usadas" id="tecnologiasModal"></div>
-            <a id="linkModal" href="#" target="_blank" class="btn-ver-en-vivo">Ver en vivo</a>
-            <div class="controles">
-                <button onclick="cambiarProyecto(-1)">&#8592;</button>
-                <button onclick="cambiarProyecto(1)">&#8594;</button>
-            </div>
-        </div>
-    </div>
+    <!-- SOBRE MÍ -->
+    <section id="sobremi" class="sobremi">
+        <h2>Sobre mí</h2>
 
-    <h4>Expenselite</h4>
-
-    <!-- Tecnologías utilizadas -->
-    <div class="tecnologias-usadas">
-        <img src="img/icons_html.png" alt="HTML" />
-        <img src="img/icons_css.png" alt="CSS" />
-        <img src="img/icons_javascript.png" alt="JS" />
-    </div>
-
-    <a href="https://expenselite.avanceapps.com/" class="btn-ver-en-vivo" target="_blank">Ver en vivo</a>
-    </div>
-
-    <!-- Botón Ver en vivo -->
-    <a href="https://expenselite.avanceapps.com/" class="btn-ver-en-vivo" target="_blank">Ver en vivo</a>
-    </div>
-
-
-    <div class="card-proyecto framework" onclick="abrirModal('modely')">
-        <img src="img/modely.png" alt="Model Y" />
-        <h4>Model Y</h4>
-    </div>
-    <!-- Agrega más proyectos aquí -->
-    </div>
+        <!-- Este párrafo será escrito dinámicamente -->
+        <p id="typewriter-text"></p>
     </section>
 
-    <!-- Modal -->
+    </section>
+    <section id="skill">
+        <h2 class="titulo-skill">Skills</h2>
+
+        <div class="skills-container">
+            <ul class="skills">
+                <li><img src="img/icons_html.png" alt="HTML" /></li>
+                <li><img src="img/icons_css.png" alt="CSS" /></li>
+                <li><img src="img/icons_javascript.png" alt="JavaScript" /></li>
+                <li><img src="img/icons_php.png" alt="PHP" /></li>
+                <li><img src="img/icons_laravel.png" alt="Laravel" /></li>
+                <li><img src="img/icons_react.png" alt="React" /></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes una idea o quieres trabajar conmigo? ¡Escríbeme!</p>
+        <form action="mailto:diego@example.com" method="post" enctype="text/plain">
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+            <input type="email" name="email" placeholder="Tu correo" required />
+            <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <!-- MODAL -->
     <div id="modal-proyecto" class="modal">
         <div class="modal-contenido">
             <span class="cerrar" onclick="cerrarModal()">&times;</span>
@@ -120,7 +143,10 @@
             </div>
         </div>
     </div>
-    <script src="js/carusel.js"></script>
+
+    <script src="js/carrusel.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/sobre_mi.js"></script>
 </body>
 
 </html>

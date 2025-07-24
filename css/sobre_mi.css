@@ -1,0 +1,110 @@
+/* sobremi.css */
+.sobremi {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 40px;
+
+    min-height: 100vh;
+    color: #ccc;
+    gap: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de glow suave alrededor */
+.sobremi::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+
+    z-index: 0;
+    animation: pulse 6s infinite ease-in-out;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.4;
+    }
+}
+
+.sobremi-contenido {
+    max-width: 600px;
+    z-index: 1;
+    text-align: left;
+}
+
+.sobremi h2 {
+    color: #00ff00;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.sobremi p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ccc;
+    text-shadow: 0 0 2px #0f0;
+}
+
+.sobremi .btn-contactar {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    background-color: transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.sobremi .btn-contactar:hover {
+    background-color: rgb(156, 6, 243);
+    color: white;
+    border-color: rgb(156, 6, 243);
+}
+
+/* Imagen tipo avatar o retrato */
+.sobremi-imagen {
+    width: 280px;
+    height: 280px;
+    background-image: url('../img/PRUEBA.jpeg');
+    /* Usa la que tengas */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #00ff00;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.sobremi-imagen:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+#typewriter-text {
+    color: #00ff00;
+    font-size: 18px;
+    text-shadow: 0 0 5px #0f0;
+    white-space: pre-wrap;
+    /* respeta saltos de línea */
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.6;
+}

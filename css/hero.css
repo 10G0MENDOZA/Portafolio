@@ -1,0 +1,31 @@
+/* navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 1000;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 1px solid #00ff00;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #00ff00;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #0f0;
+    text-shadow: 0 0 10px #0f0;
+}

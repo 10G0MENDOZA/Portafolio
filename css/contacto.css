@@ -1,0 +1,51 @@
+/* contacto.css */
+.contacto {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+   
+    top: -50px;
+}
+
+.contacto h2 {
+    color: #0f0;
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.contacto input,
+.contacto textarea {
+    padding: 10px;
+    border: 1px solid #00ff00;
+    background: #000;
+    color: white;
+    border-radius: 8px;
+    resize: none;
+}
+
+.contacto button {
+    padding: 10px;
+    background-color: #00ff00;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background-color: rgb(156, 6, 243);
+    color: white;
+}

@@ -1,0 +1,19 @@
+/* responsive.css */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenido_texto {
+        text-align: center;
+    }
+
+    .cv button {
+        width: 100%;
+    }
+
+    .skills {
+        gap: 10px;
+    }
+}
