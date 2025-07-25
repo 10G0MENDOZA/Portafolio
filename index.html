@@ -18,9 +18,9 @@
 </head>
 
 <body>
- <video autoplay muted loop id="video-fondo">
-  <source src="video/video_fondo3.mp4" type="video/mp4">
-</video>
+    <video autoplay muted loop id="video-fondo">
+        <source src="video/video_fondo3.mp4" type="video/mp4">
+    </video>
     <!-- NAVBAR -->
     <header class="navbar">
         <nav>
@@ -64,39 +64,46 @@
             </div>
         </div>
     </main>
-
     <!-- PROYECTOS -->
     <section id="proyectos" class="proyectos">
         <h2>Proyectos</h2>
         <p class="subtitulo">Todo lo que puedas imaginar, lo podrás <span class="resaltado">programar</span>.</p>
 
-        <!---<div class="filtros">
-            <button onclick="filtrarProyectos('todos')">HTML</button>
-            <button onclick="filtrarProyectos('js')">CSS</button>
-            <button onclick="filtrarProyectos('framework')">JavaScript</button>
-            <button onclick="filtrarProyectos('wordpress')">PHP</button>
-            <button onclick="filtrarProyectos('wordpress')">Laravel</button>
-        </div> -->
-
         <div class="galeria-proyectos">
-            <div class="card-proyecto js" onclick="abrirModal('Expenselite')">
-                <h4 id="expenseliteh1">Expenselite</h4>
-                <p>Usuario:Mily
-                    Contraseña: Recepcion25
-                </p>
+            <!-- Proyecto Expenselite -->
+            <div class="card-proyecto js">
+                <h4>Expenselite</h4>
+                <p>Usuario: Mily <br> Contraseña: Recepcion25</p>
                 <a href="https://expenselite.avanceapps.com/" target="_blank">
-                    <img id="imgexpenselite" src="img/index.png" alt="Expenselite" />
-                    <div class="tecnologias-usadas">
-                        <img src="img/icons_html.png" alt="HTML" />
-                        <img src="img/icons_css.png" alt="CSS" />
-                        <img src="img/icons_javascript.png" alt="JS" />
-                        <img src="img/icons_php.png" alt="JS" />
-                    </div>
-                    <a href="https://expenselite.avanceapps.com/" class="btn-ver-en-vivo" target="_blank">Ver en
-                        Github</a>
+                    <img class="img-proyecto" src="img/index.png" alt="Expenselite" />
+                </a>
+                <div class="tecnologias-usadas">
+                    <img src="img/icons_html.png" alt="HTML" />
+                    <img src="img/icons_css.png" alt="CSS" />
+                    <img src="img/icons_javascript.png" alt="JS" />
+                    <img src="img/icons_php.png" alt="PHP" />
+                </div>
+                <a href="https://github.com/10G0MENDOZA/Expenselite" class="btn-ver-en-vivo" target="_blank">Ver en Github</a>
+            </div>
+
+            <!-- Proyecto Marbenas Tours -->
+            <div class="card-proyecto js">
+                <h4>Marbenas Tours</h4>
+                <a href="https://marbenastours.lovestoblog.com" target="_blank">
+                    <img id="img_marbena"            class="img-proyecto" src="img/index_marbenas.png" alt="Marbenas Tours" />
+                </a>
+                <div  id ="tecnomar" class="tecnologias-usadas">
+                    <img src="img/icons_html.png" alt="HTML" />
+                    <img src="img/icons_css.png" alt="CSS" />
+                    <img src="img/icons_javascript.png" alt="JS" />
+                    <img src="img/icons_php.png" alt="PHP" />
+                </div>
+                <a href="https://github.com/10G0MENDOZA/Marbenas-Tours"  id="btvivoMarb"             class="btn-ver-en-vivo" target="_blank">Ver en
+                    Github</a>
             </div>
         </div>
     </section>
+
 
     <!-- SOBRE MÍ -->
     <section id="sobremi" class="sobremi">
