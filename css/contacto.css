@@ -3,8 +3,8 @@
     position: relative;
     padding: 60px 20px;
     text-align: center;
-   
-    top: -50px;
+    top: -70px;
+
 }
 
 .contacto h2 {
@@ -47,5 +47,10 @@
 
 .contacto button:hover {
     background-color: rgb(156, 6, 243);
+    color: white;
+}
+
+.contacto input::placeholder,
+.contacto textarea::placeholder {
     color: white;
 }
