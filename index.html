@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="/css/sobre_mi.css">
     <link rel="stylesheet" href="/css/contacto.css">
     <link rel="stylesheet" href="/css/modal.css">
-    <link rel="stylesheet" href="/css/">
-    <link rel="stylesheet" href="/css/timeline.css">
 
 </head>
 
@@ -22,18 +20,22 @@
     <video autoplay muted loop id="video-fondo">
         <source src="video/video_fondo3.mp4" type="video/mp4">
     </video>
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#sobremi">Sobre mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#skill">Skill</a></li>
-            </ul>
-        </nav>
-    </header>
+   <!-- NAVBAR -->
+<header class="navbar">
+    <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <img src="img/icons_menu.png" alt="Menú">
+        </button>
+        <ul id="navbar-links" class="navbar-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#sobremi">Sobre mí</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#skill">Skill</a></li>
+        </ul>
+    </nav>
+</header>
+
 
     <!-- HERO -->
     <main class="hero" id="inicio">
@@ -128,19 +130,31 @@
                 <li><img src="img/icons_php.png" alt="PHP" /></li>
                 <li><img src="img/icons_laravel.png" alt="Laravel" /></li>
                 <li><img src="img/icons_react.png" alt="React" /></li>
+                <li><img src="img/icon_git.png" alt="GitHub" /></li>
+                <li><img src="img/icons_cpanel.png" alt="GitHub" /></li>
             </ul>
         </div>
     </section>
-    <!-- CONTACTO -->
+
     <section id="contacto" class="contacto">
-        <h2>Contacto</h2>
-        <p>¿Tienes una idea o quieres trabajar conmigo? ¡Escríbeme!</p>
-        <form action="mailto:diego@example.com" method="post" enctype="text/plain">
-            <input type="text" name="nombre" placeholder="Tu nombre" required />
-            <input type="email" name="email" placeholder="Tu correo" required />
-            <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
-            <button type="submit">Enviar mensaje</button>
-        </form>
+        <div class="contacto-container">
+            <!-- IZQUIERDA: Info de contacto -->
+            <div class="info-contacto">
+                <h3>Contáctame</h3>
+                <p><strong>Dirección:</strong> Bogotá, Colombia</p>
+                <p><strong>Horario:</strong> Lunes a viernes 9am - 6pm</p>
+                <p><strong>Email:</strong> diegomendoza2609@gmail.com</p>
+                <p><strong>Teléfono:</strong> +57 3176209590</p>
+            </div>
+
+            <!-- DERECHA: Formulario -->
+            <form class="formulario-contacto" action="mailto:diego@example.com" method="post" enctype="text/plain">
+                <input type="text" name="nombre" placeholder="Tu nombre" required />
+                <input type="email" name="email" placeholder="Tu correo" required />
+                <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
     </section>
 
     <!-- MODAL -->
@@ -156,6 +170,7 @@
     <script src="js/carrusel.js"></script>
     <script src="js/index.js"></script>
     <script src="js/sobre_mi.js"></script>
+    <script src="js/ocultar_menu.js"></script>
 </body>
 
 </html>
