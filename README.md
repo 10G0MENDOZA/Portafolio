@@ -27,4 +27,4 @@ https://db932933-da44-4968-a939-32938c06fa03-00-zoo6yksq3dd8.spock.replit.dev/
 O clona el repositorio:
 
 ```bash
-git clone https://github.com/tuusuario/portafolio.git
+git clone https://github.com/10G0MENDOZA/Portafolio
