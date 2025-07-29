@@ -1,17 +1,21 @@
 #text-principal-footer {
+    position: relative;
     text-align: center;
+    margin-top: 30px;
 }
 
 #redes-personales {
     position: relative;
-    top: -115px;
+    margin-top: -95px;
     margin-right: 30px;
 }
 
 .redes {
-    position: relative;
-    text-align: right;
+    display: flex;
+    justify-content: center; /* o flex-end si lo quieres a la derecha */
+    gap: 40px;
 }
+
 
 .redes a {
     position: relative;
