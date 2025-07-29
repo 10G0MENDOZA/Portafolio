@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/sobre_mi.css">
     <link rel="stylesheet" href="/css/contacto.css">
     <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="/css/footer.css">
 
 </head>
 
@@ -20,23 +21,23 @@
     <video autoplay muted loop id="video-fondo">
         <source src="video/video_fondo3.mp4" type="video/mp4">
     </video>
-   <!-- NAVBAR -->
-<header class="navbar">
-    <nav>
-        <button class="menu-toggle" onclick="toggleMenu()">
-            <divi id="menu" class="hidden">
-            <img src="img/icons_menu.png" alt="Menú">
-        </button>
-        <ul id="navbar-links" class="navbar-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#sobremi">Sobre mí</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#skill">Skill</a></li>
-        </ul>
-        </div>
-    </nav>
-</header>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <divi id="menu" class="hidden">
+                    <img src="img/icons_menu.png" alt="Menú">
+            </button>
+            <ul id="navbar-links" class="navbar-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobremi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#skill">Skill</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
 
 
     <!-- HERO -->
@@ -149,26 +150,43 @@
                 <p><strong>Teléfono:</strong> +57 3176209590</p>
             </div>
 
-                <!-- DERECHA: Formulario -->
-                <form class="formulario-contacto" action="mailto:diego@example.com" method="post" enctype="text/plain">
-                    <input type="text" name="nombre" placeholder="Tu nombre" required />
-                    <input type="email" name="email" placeholder="Tu correo" required />
-                    <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
-                    <button type="submit">Enviar mensaje</button>
-                </form>
-            </div>
+            <!-- DERECHA: Formulario -->
+            <form class="formulario-contacto" action="mailto:diego@example.com" method="post" enctype="text/plain">
+                <input type="text" name="nombre" placeholder="Tu nombre" required />
+                <input type="email" name="email" placeholder="Tu correo" required />
+                <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
     </section>
 
-    <!-- MODAL -->
-    <div id="modal-proyecto" class="modal">
-        <div class="modal-contenido">
-            <span class="cerrar" onclick="cerrarModal()">&times;</span>
-            <div id="contenido-modal">
-                <!-- Aquí se carga el contenido dinámico -->
-            </div>
-        </div>
-    </div>
+    <!--FOOTER-->
+    <footer>
+        <div class="footer">
+            <p id="text-principal-footer">&copy; 2025 Hecho por Diego Ali Mendoza Bastidas</p>
+            <nav>
 
+               <!--- <li><a href="index.html">Inicio</a></li>
+                <li><a href="#proyectos">Contactos</a></li>
+                <li><a href="#sobremi">Sobremi</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#skill">Skill</a></li>
+            </nav> -->
+        </div>
+        <div class="redes">
+            <h1 id="redes-personales">Redes Sociales</h1>
+            <a href="https://www.instagram.com/diegoali2609/" target="_blank">
+               <img src="img/icons_instagram.png" alt="emoticons-instagram">
+            </a>
+            <a href="https://web.facebook.com/10goGO1/" target="_blank">
+             <img src="img/icons_facebook.png" alt="emoticons-facebook">
+            </a>
+            <a href="https://x.com/?lang=es" target="_blank">
+            <img src="img/icons_x.png" alt="emoticons-x"> 
+            </a>
+
+        </div>
+    </footer>
     <script src="js/carrusel.js"></script>
     <script src="js/index.js"></script>
     <script src="js/sobre_mi.js"></script>

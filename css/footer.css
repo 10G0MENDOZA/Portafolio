@@ -1,0 +1,29 @@
+#text-principal-footer {
+    text-align: center;
+}
+
+#redes-personales {
+    position: relative;
+    top: -115px;
+    margin-right: 30px;
+}
+
+.redes {
+    position: relative;
+    text-align: right;
+}
+
+.redes a {
+    position: relative;
+    display: inline-block;
+    margin-right: 40px;
+    text-decoration: none;
+    color: #f4fffe;
+    vertical-align: middle;
+    top: -100px;
+}
+
+.redes a:hover{
+     transform: scale(1.1);
+    filter: brightness(1.3);
+}
