@@ -1,6 +1,7 @@
 #skill {
   position: relative;
-  padding: 60px 20px; /* Ajustado para ser más flexible */
+  padding: 60px 20px;
+  /* Ajustado para ser más flexible */
   text-align: center;
   color: #00ff00;
 }
@@ -27,6 +28,7 @@
   animation: deslizar 20s linear infinite;
 
 }
+
 .skills li {
   display: flex;
   flex-direction: column;
@@ -52,6 +54,7 @@
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -62,17 +65,21 @@
 
 @media (max-width: 768px) {
   #skill {
-    padding: 40px 10px; /* Reduce espacio para móviles */
+    padding: 40px 10px;
+    /* Reduce espacio para móviles */
   }
 
   .skills {
-    flex-direction: column; /* En lugar de horizontal, se apilan */
+    flex-direction: column;
+    /* En lugar de horizontal, se apilan */
     gap: 30px;
-    animation: none; /* Quita animación horizontal en móviles */
+    animation: none;
+    /* Quita animación horizontal en móviles */
   }
 
   .skills li img {
     width: 80px;
     height: 80px;
   }
+
 }
