@@ -9,6 +9,14 @@
     border-bottom: 1px solid #00ff00;
 }
 
+/*#miImagen {
+      width: 300px;
+      transition: opacity 0.3s ease;
+    }
+    .oculto {
+      display: none;
+    }*/
+
 .navbar nav {
     display: flex;
     justify-content: space-between;
@@ -60,11 +68,13 @@
         right: 0;
         width: 100%;
         padding: 10px 0;
-     
+
     }
-   .navbar {
-    border-bottom: none!important;
-   }
+
+    .navbar {
+        border-bottom: none !important;
+    }
+
     .navbar-links.show {
         display: flex;
     }
@@ -72,4 +82,13 @@
     .menu-toggle {
         display: block;
     }
+    .img-menu {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.oculta {
+  display: none;
+}
 }
