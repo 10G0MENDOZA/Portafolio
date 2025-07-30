@@ -1,8 +1,7 @@
 #skill {
   position: relative;
-  padding: 60px 0;
+  padding: 60px 20px; /* Ajustado para ser más flexible */
   text-align: center;
-  padding: 230px;
   color: #00ff00;
 }
 
@@ -26,8 +25,8 @@
   margin: 0;
   list-style: none;
   animation: deslizar 20s linear infinite;
-}
 
+}
 .skills li {
   display: flex;
   flex-direction: column;
@@ -38,8 +37,8 @@
 }
 
 .skills li img {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
 }
 
@@ -48,13 +47,32 @@
   opacity: 1;
 }
 
-/* Animación de desplazamiento */
+/* Animación de desplazamiento horizontal */
 @keyframes deslizar {
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(-100%);
+  }
+}
+
+
+/* Estilos RESPONSIVOS  */
+
+@media (max-width: 768px) {
+  #skill {
+    padding: 40px 10px; /* Reduce espacio para móviles */
+  }
+
+  .skills {
+    flex-direction: column; /* En lugar de horizontal, se apilan */
+    gap: 30px;
+    animation: none; /* Quita animación horizontal en móviles */
+  }
+
+  .skills li img {
+    width: 80px;
+    height: 80px;
   }
 }

@@ -98,25 +98,29 @@ img {
   line-height: 1.6;
   margin-bottom: 20px;
 }
+.links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .links img {
-  position: relative;
   width: 35px;
-  left: 30px;
-  /* Esto lo mueve 30px a la derecha */
   cursor: pointer;
-
-  top: 10px;
   border-radius: 10px;
+  transition: transform 0.3s, filter 0.3s;
 }
 
 #linktwo {
-  top: -34px;
-  position: relative;
-  left: 40px;
   border-radius: 10px;
-  background: white;
-
+  padding: 2px; /* opcional para que no se corte */
 }
 
 .links img:hover {
@@ -188,11 +192,14 @@ img {
     left: 0;
     top: 0;
     margin: 0 10px;
+
+ 
   }
 
   #linktwo {
+    position: relative;
     left: 0;
-    top: 0;
+    top: -5px;
     margin-top: 10px;
   }
 
