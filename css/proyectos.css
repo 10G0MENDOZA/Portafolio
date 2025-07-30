@@ -65,18 +65,7 @@
     margin-bottom: 15px;
 }
 
-#img_marbena{
-    position: relative;
-    top: 40px;
-}
-#tecnomar{
-    position: relative;
-    top: 40px;
-}
-#btvivoMarb{
-    position: relative;
-    top: 40px;
-}
+
 /* Tecnologías usadas (iconos) */
 .tecnologias-usadas {
     display: flex;
@@ -113,3 +102,34 @@
     background-color: rgb(156, 6, 243);
     color: white;
 }
+
+
+@media (max-width: 768px) {
+  .proyectos {
+    padding: 100px 20px 40px;
+    text-align: center;
+  }
+
+  .card-proyecto {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 40px;
+  }
+
+  .subtitulo {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .img-proyecto {
+    max-height: 200px;
+    margin-bottom: 15px;
+  }
+
+  .tecnologias-usadas {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
