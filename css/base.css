@@ -77,7 +77,9 @@ img {
   border: 2px solid #00ff00;
   box-shadow: 0 0 15px #00ff00;
 }
-
+.imagen_personal:hover{
+ transform: scale(1.1);
+}
 .contenido_texto {
   max-width: 600px;
   text-align: left;
