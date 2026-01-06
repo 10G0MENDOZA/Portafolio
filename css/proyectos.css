@@ -25,12 +25,13 @@
     font-weight: bold;
 }
 
-/* CONTENEDOR DE PROYECTOS: horizontal en pantallas grandes */
+/* CONTENEDOR DE TODOS LOS PROYECTOS */
 .galeria-proyectos {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
+    flex-wrap: wrap;             /* ✅ Permite que las tarjetas bajen si no caben horizontalmente */
+    justify-content: center;     /* ✅ Centra las tarjetas en la fila */
+    gap: 40px;                   /* ✅ Espacio entre tarjetas */
+    padding-bottom: 20px;        /* ✅ Espacio extra abajo */
 }
 
 /* TARJETA INDIVIDUAL DEL PROYECTO */
@@ -39,12 +40,16 @@
     border: 1px solid #00ff00;
     border-radius: 12px;
     padding: 20px;
-    width: 100%;
-    max-width: 420px;
+
+    /* ✅ Ajuste para diseño responsive horizontal */
+    flex: 1 1 300px;             /* Intenta que cada tarjeta tenga 300px como base, pero puede crecer/encogerse */
+    max-width: 420px;           /* Límite máximo de ancho */
+    
     box-shadow: 0 0 15px #00ff00;
     transition: transform 0.3s;
 }
 
+/* Animación al pasar el mouse */
 .card-proyecto:hover {
     transform: translateY(-15px);
 }
@@ -65,7 +70,6 @@
     margin-bottom: 15px;
 }
 
-
 /* Tecnologías usadas (iconos) */
 .tecnologias-usadas {
     display: flex;
@@ -73,9 +77,9 @@
     gap: 10px;
     margin: 10px 0;
     flex-wrap: wrap;
-    
 }
 
+/* Iconos de tecnologías */
 .tecnologias-usadas img {
     width: 36px;
     height: 36px;
@@ -103,33 +107,38 @@
     color: white;
 }
 
-
+/* =============================== */
+/* DISEÑO RESPONSIVO PARA MÓVILES */
+/* =============================== */
 @media (max-width: 768px) {
-  .proyectos {
-    padding: 100px 20px 40px;
-    text-align: center;
-  }
+    .proyectos {
+        padding: 100px 20px 40px;
+        text-align: center;
+    }
 
-  .card-proyecto {
-    width: 100%;
-    max-width: 320px;
-    margin-bottom: 40px;
-  }
+    .galeria-proyectos {
+        flex-direction: column;   /* ✅ Las tarjetas se apilan verticalmente */
+        align-items: center;      /* ✅ Se centran horizontalmente */
+        padding: 0;
+    }
 
-  .subtitulo {
-    max-width: 100%;
-    text-align: center;
-  }
+    .card-proyecto {
+        max-width: 100%;          /* ✅ Que ocupen todo el ancho disponible en móvil */
+    }
 
-  .img-proyecto {
-    max-height: 200px;
-    margin-bottom: 15px;
-  }
+    .subtitulo {
+        max-width: 100%;
+        text-align: center;
+    }
 
-  .tecnologias-usadas {
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
+    .img-proyecto {
+        max-height: 200px;
+        margin-bottom: 15px;
+    }
+
+    .tecnologias-usadas {
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
 }
-
